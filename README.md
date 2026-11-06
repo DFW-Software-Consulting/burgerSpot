@@ -1,19 +1,29 @@
+# The Burger Spot
 
-  <h2 align="center">The Burger Spot - Restaurant Website Template</h2>
+A demo restaurant website built by [DFW Software Consulting](https://dfwsc.com) to show prospective restaurant clients what a polished, modern local-restaurant site can look like. The Burger Spot is a fictional Dallas burger restaurant; all names, addresses, phone numbers (555-01xx), reviews and prices are made up.
 
-  **The Burger Spot** is a customizable restaurant website template, perfect for showcasing to potential clients. This template is designed for restaurant businesses, especially burger joints, and demonstrates a fully responsive, modern design. Built using HTML, CSS, and JavaScript, it can be adapted for various restaurant layouts and needs.
+It started from the free "Foodie" template by codewithsadee and has been reworked: new content, a refreshed design system, a working menu filter and search, validated demo forms, and accessibility and performance fixes.
 
-</div>
+Live demo: https://dfw-software-consulting.github.io/burgerSpot/
 
-<br />
+![The Burger Spot home page](./assets/displayImage/desktop.png)
 
-### Purpose
+## View locally
 
-This project serves as a template for building restaurant websites. It is designed to showcase potential layouts and features to clients looking to create or revamp their online presence. The code is structured for easy customization and scalability, making it an ideal base for future projects.
+Plain HTML, CSS and JavaScript with no build step or dependencies. Open `index.html` in a browser, or serve the folder:
 
-### Features
+```sh
+python3 -m http.server 8000
+# then visit http://localhost:8000
+```
 
-- Fully responsive design
-- Modern layout and design elements
-- Easily customizable for different restaurant themes
-- HTML CSS and Javascript
+All paths are relative, so it also works under the GitHub Pages `/burgerSpot/` subpath.
+
+## Structure
+
+- `index.html` - the single page
+- `assets/css/style.css` - styles and design tokens (documented in `style-guide.md`)
+- `assets/js/script.js` - nav, menu filter and search, demo forms and notices
+- `assets/images/` - photos and illustrations
+
+The page is marked `noindex` because the business is fictional. Forms and "Order Now" buttons are demos and send nothing.
